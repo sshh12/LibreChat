@@ -23,7 +23,6 @@ interface:
 endpoints:
   assistants:
     disableBuilder: true
-    supportedIds: []
   agents:
     recursionLimit: 50
     maxRecursionLimit: 100
