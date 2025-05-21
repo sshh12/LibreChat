@@ -10,7 +10,6 @@ speech:
       apiKey: '${TTS_API_KEY}'
       model: 'eleven_multilingual_v2'
       voices: ['XrExE9yKIg1WjnnlVkGX', 'Xb7hH8MSUJpSbSDYk0k2', 'pqHfZKP75CvOlQylNhV4']
-includedTools: [web-browser, calculator, image_gen_oai]
 interface:
   modelSelect: true
   parameters: true
@@ -22,6 +21,9 @@ interface:
   agents: true
   runCode: true
 endpoints:
+  assistants:
+    disableBuilder: true
+    supportedIds: []
   agents:
     recursionLimit: 50
     maxRecursionLimit: 100
