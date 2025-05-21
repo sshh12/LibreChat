@@ -21,9 +21,9 @@ const getModelsConfig = async (req) => {
 async function loadModels(req) {
   const cache = getLogStores(CacheKeys.CONFIG_STORE);
   const cachedModelsConfig = await cache.get(CacheKeys.MODELS_CONFIG);
-  // if (cachedModelsConfig) {
-  //   return cachedModelsConfig;
-  // }
+  if (cachedModelsConfig) {
+    return cachedModelsConfig;
+  }
   const defaultModelsConfig = await loadDefaultModels(req);
   const customModelsConfig = await loadConfigModels(req);
 

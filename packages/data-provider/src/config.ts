@@ -966,7 +966,7 @@ export enum CacheKeys {
   /**
    * Key for the model config cache.
    */
-  MODELS_CONFIG = 'modelsConfig-2',
+  MODELS_CONFIG = 'modelsConfig',
   /**
    * Key for the model queries cache.
    */

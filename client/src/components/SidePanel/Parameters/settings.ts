@@ -141,7 +141,7 @@ const openAIParams: Record<string, SettingDefinition> = {
   },
   promptPrefix: librechat.promptPrefix,
   temperature: createDefinition(baseDefinitions.temperature, {
-    default: 0.0,
+    default: openAISettings.temperature.default,
     range: {
       min: openAISettings.temperature.min,
       max: openAISettings.temperature.max,
